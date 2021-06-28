@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+      <nav class="navbar navbar-light nav-bg-color justify-content-between">
+        <a class="navbar-brand">American Button Machines - Build-a-Button 6.0         
+        </a>
+        <div >
+         
+            <div id="topbar-right">
+                <button class="button option-button btn-safety-zone no-focus">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/square.svg">
+                    <span>Instructions</span>
+                </button>
+                <button class="button option-button right-btns show-upload-pop-up-js bab-disabled" data-upload-for="edit" data-toggle="modal" data-backdrop="false" data-target="#popup-add-design" style="outline: none;">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/upload.svg">
+                    <span>Upload to Edit</span>
+                </button>
+                <button class="button option-button btn-preview preview-js bab-disabled" data-toggle="modal" data-backdrop="false" style="outline: none;">
+                    <img class="width-custom" src="https://buildabutton.net/version6/assets/images/icons/p-icon.png">
+                    <span>Preview &amp; Share</span>
+                </button>
+                <button class="button option-button show-save-export-js bab-disabled" data-toggle="modal" data-backdrop="false" data-target="#popup-save" style="outline: none;">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/save.svg">
+                    <span>Save and Print</span>
+                </button>
+            </div>
+        </div>
+      </nav>
+      <section>
+ 
+
+    <div class="tab">
+       
+        <button class="tablinks" onclick="openCity(event, 'Templates')" >    <div class="sub-item w-100">
+            <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/template-icon-light.svg">
+            <div class="title">Templates</div>
+        </div></button>
+        <button class="tablinks" onclick="openCity(event, 'Photos')">
+         <div class="sub-item w-100">
+                    <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/photos-icon-light.svg">
+                    <div class="title">Photos</div>
+                </div>
+        </button>
+      
+        <button class="tablinks" onclick="openCity(event, 'Shapes')">
+            <div class="sub-item w-100">
+                <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/shapes-icon-light.svg">
+                <div class="title">Shapes</div>
+            </div>
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Text')">
+            <div class="sub-item w-100">
+                <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/text-icon-light.svg">
+                <div class="title">Text</div>
+            </div>
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Lines')">
+            <div class="sub-item w-100">
+                <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/lines-icon-light.svg">
+                <div class="title">Lines</div>
+            </div>
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Borders')">
+            <div class="sub-item w-100">
+                <img src="https://buildabutton.net/version6/assets/images/leftbar-icons/borders-icon-light.svg">
+                <div class="title">Borders</div>
+            </div>
+        </button>
+      </div>
+      
+      <div id="Templates" class="tabcontent">
+        <h3>Templates</h3>
+        <p>Templates is the capital city of England.</p>
+      </div>
+      
+      <div id="Photos" class="tabcontent">
+        <h3>Photos</h3>
+        <p>Photos is the capital of France.</p>
+      </div>
+      
+    
+  
+      <div id="Shapes" class="tabcontent">
+        <h3>Tddd</h3>
+        <p> is the capital of Japan.</p>
+      </div>
+      <div id="Text" class="tabcontent">
+        <h3>foseeeeeo</h3>
+        <p> is the capital of Japan.</p>
+      </div>
+      <div id="Lines" class="tabcontent">
+        <h3>gggg</h3>
+        <p>Td is the capital of Japan.</p>
+      </div>
+      <div id="Borders" class="tabcontent">
+        <h3>sss</h3>
+        <p>d is the capital of Japan.</p>
+      </div>
+     <div class="main-content">
+         <div class="edit-bar">
+            <div class="right-top">
+                <div class="option-icons-wrapper">
+                    <div class="option-icons-left">
+                        <span id="clear-canvas-cont" data-toggle="tooltip" data-placement="top" title="" data-original-title="Clear Canvas">
+                        <i class="fa fa-file" style="font-size: 18px;"></i>
+                        </span>
+                        <span id="copy_cont" class="hide-on-mobile bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Copy">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/copy.svg">
+                        </span>
+                        <span id="paste_cont" class="hide-on-mobile bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Paste">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/paste.svg">
+                        </span>
+                        <span id="icon-delete-btn" class="bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/delete-min-dark.svg">
+                        </span>
+                        <span id="center-object-btn" class="hide-on-mobile bab-disabled disable-slash" data-toggle="tooltip" data-placement="top" title="" data-original-title="Move to center">
+                            C
+                        </span>
+                        <div class="dropdown align-dropdown bab-disabled" id="bab-align-dropdown">
+                            <span class="padding-8" id="" data-toggle="dropdown" aria-expanded="true">
+                                <img src="https://buildabutton.net/version6/assets/images/icons/align-v.svg">
+                            </span>
+                            <div class="dropdown-menu align-dropdown-menu">
+                                <div class="alignment-row">
+                                    <span class="alignment-row-head">Horizontal Alignment</span>
+                                    <span>
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/left-canvas.svg" data-type="left">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/center-canvas.svg" data-type="center">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/right-canvas.svg" data-type="right">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/horizontal-gap.svg" data-type="h-equal">
+                                    </span>
+                                </div>
+                                <div class="alignment-row">
+                                    <span class="alignment-row-head">Vertical Alignment</span>
+                                    <span>
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/top-canvas.svg" data-type="top">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/middle-canvas.svg" data-type="middle">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/bottom-canvas.svg" data-type="bottom">
+                                        <img class="bab-alignment-object" src="https://buildabutton.net/version6/assets/images/icons/vertical-gap.svg" data-type="v-equal">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="bring_front_cont" class="bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Layer Up">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/bring-front.svg">
+                        </span>
+                        <span id="send_back_cont" class="bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Layer Down">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/send-back.svg">
+                        </span>
+<!--							<span class="fa fa-unlock hide-on-mobile  d-none" id="lock-object" data-is-lock="false" data-toggle="tooltip" data-placement="top"-->
+<!--								  data-original-title="Lock">-->
+<!--                            </span>-->
+                        <span class="hide-on-mobile bab-disabled" id="group-object" data-toggle="tooltip" data-placement="top" data-original-title="Group">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/group.svg">
+                        </span>
+                        <span class="hide-on-mobile bab-disabled" id="ungroup-object" data-toggle="tooltip" data-placement="top" data-original-title="Ungroup">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/ungroup.svg">
+                        </span>
+                        <span class="show-on-photos hide-on-mobile hide-on-tab" style="display: block;" id="remove-background" data-toggle="tooltip" data-placement="top" title="" data-original-title="Image Eraser Tool">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/eraser.svg">
+                        </span>
+                        <span class="show-on-photos hide-on-mobile" style="display: block;" id="crop-round-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Crop Round">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/crop-round.svg">
+                        </span>
+                        <span class="show-on-photos hide-on-mobile" style="display: block;" id="crop-square-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Crop Square">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/crop-square.svg">
+                        </span>
+                        <span id="btn-undo" class="bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Undo">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/undo.svg">
+                        </span>
+                        <span id="btn-redo" class="bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Redo">
+                            <img src="https://buildabutton.net/version6/assets/images/icons/redo.svg">
+                        </span>
+                    </div>
+                    <div class="option-row-right hide-on-mobile">
+                        <span>
+                            <img id="active-template-icon" src="https://buildabutton.net/version6/assets/images/icons/circle.svg">
+                        </span>
+                        <span><b>Size:</b></span><span id="button_size_active">2.25"</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+     </div>
+
+     <div class="right-most">
+        <div id="upper-tools">
+            <button class="setting-btns right-btns" id="btn-show-grids" data-toggle="tooltip" data-placement="top" title="" data-original-title="Grid">
+                <img src="https://buildabutton.net/version6/assets/images/icons/grid-min.svg">
+            </button>
+            <span class="right-btns text-center" id="toggle-centering-guide" data-is-show="true" data-toggle="tooltip" data-placement="top" title="" data-original-title="Centering Guide On/Off">
+                <button class="setting-btns" id="auto-centering-guide" data-toggle="" data-backdrop="">
+                               <!-- <i class="fa fa-border-none"></i> -->
+                    <i class="fa fa-crosshairs"></i>
+                </button>
+            </span>
+        </div>
+        <div id="lower-tools">
+            <button class="setting-btns right-btns" id="btn-zoom-in" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom In">
+                <img src="https://buildabutton.net/version6/assets/images/icons/zoom+min.svg">
+            </button>
+            <span id="zoom_percentage">130%</span>
+            <button class="setting-btns right-btns" id="btn-zoom-out" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom Out">
+                <img src="https://buildabutton.net/version6/assets/images/icons/zoom-min.svg">
+            </button>
+        </div>
+        
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
