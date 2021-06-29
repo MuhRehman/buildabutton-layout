@@ -24,15 +24,15 @@
                     <img src="https://buildabutton.net/version6/assets/images/icons/square.svg">
                     <span>Instructions</span>
                 </button>
-                <button class="button option-button right-btns show-upload-pop-up-js bab-disabled" data-upload-for="edit" data-toggle="modal" data-backdrop="false" data-target="#popup-add-design" style="outline: none;">
+                <button class="button option-button right-btns show-upload-pop-up-js bab-disabled" data-toggle="modal" data-target="#exampleModal" style="outline: none;">
                     <img src="https://buildabutton.net/version6/assets/images/icons/upload.svg">
                     <span>Upload to Edit</span>
                 </button>
-                <button class="button option-button btn-preview preview-js bab-disabled" data-toggle="modal" data-backdrop="false" style="outline: none;">
+                <button class="button option-button btn-preview preview-js bab-disabled" data-toggle="modal"  data-target="#exampleModalpreview"  data-backdrop="false" style="outline: none;">
                     <img class="width-custom" src="https://buildabutton.net/version6/assets/images/icons/p-icon.png">
                     <span>Preview &amp; Share</span>
                 </button>
-                <button class="button option-button show-save-export-js bab-disabled" data-toggle="modal" data-backdrop="false" data-target="#popup-save" style="outline: none;">
+                <button class="button option-button show-save-export-js bab-disabled" data-toggle="modal" data-target="#exampleModalprint" data-backdrop="false" data-target="#popup-save" style="outline: none;">
                     <img src="https://buildabutton.net/version6/assets/images/icons/save.svg">
                     <span>Save and Print</span>
                 </button>
@@ -82,36 +82,238 @@
       </div>
       
       <div id="Templates" class="tabcontent">
-        <h3>Templates</h3>
-        <p>Templates is the capital city of England.</p>
+        <div class="temp-holder scrol-change" style="padding-bottom: 100px !important;"><div class="template-row select-template-row active-template" id="Round"><i class="fa fa-circle"></i><a href="#" data-toggle="tooltip" title="" data-placement="bottom" style="" class="left_btns temp_btns temp-inner-desc" data-original-title="Click to add Templete">Round</a></div><div class="template-row select-template-row" id="Rectangle"><img src="https://buildabutton.net/version6/assets/images/icons/rectangle.svg"><a href="#" data-toggle="tooltip" title="" data-placement="bottom" style="background-size: 15% 53%;" class="left_btns temp_btns temp-inner-desc" data-original-title="Click to add Templete">Rectangle</a></div><div class="template-row select-template-row" id="Square"><i class="fa fa-square"></i><a href="#" data-toggle="tooltip" title="" data-placement="bottom" style="" class="left_btns temp_btns temp-inner-desc" data-original-title="Click to add Templete">Square</a></div><div class="template-row select-template-row" id="Oval"><img src="https://buildabutton.net/version6/assets/images/icons/ellipse.svg"><a href="#" data-toggle="tooltip" title="" data-placement="bottom" style="" class="left_btns temp_btns temp-inner-desc" data-original-title="Click to add Templete">Oval</a></div>
+        <div class="template-content" id="template-stencil-container">
+            <input type="hidden" name="active_stencil" id="active_stencil" value="">
+            <span class="editor-heading">Stencil</span>
+            <div class="template-row-inner">
+                <a class="pick-image full-opacity" id="clear-stencil" href="#" data-type="none" data-toggle="tooltip" data-placement="top" title="" data-original-title="Clear Stencil">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/stencil_0.png">
+                </a>
+                <a class="pick-image select-stencil" href="#" data-type="stencil_1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stencil 1">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/stencil_1.png">
+                </a>
+                <a class="pick-image select-stencil" href="#" data-type="stencil_2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stencil 2">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/stencil_2.png">
+                </a>
+                <a class="pick-image select-stencil" href="#" data-type="stencil_3" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stencil 3">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/stencil_3.png">
+                </a>
+            </div>
+
+            <div class="d-none" id="stencil-property">
+                <span class="editor-heading font-11">Color</span>
+                <div class="row m-0">
+                    <div id="mytemplate">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/cir4.svg">
+                    </div>
+                    <div class="input-color-right-templates">
+                        <div class="input-group custom-color-input" id="stencilTopColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilTopColor">
+                        </div>
+                        <div class="input-group custom-color-input" id="stencilMiddleColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(255, 255, 255);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilMiddleColor">
+                        </div>
+                        <div class="input-group custom-color-input" id="stencilBottomColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilBottomColor">
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div id="mytemplate">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/circle-big.svg">
+                    </div>
+                    <div class="input-color-right-templates">
+                        <div class="input-group custom-color-input" id="stencilTopColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilTopColor">
+                        </div>
+                        <div class="input-group custom-color-input" id="stencilMiddleColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(255, 255, 255);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilMiddleColor">
+                        </div>
+                        <div class="input-group custom-color-input" id="stencilBottomColor">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="stencilBottomColor">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-container" id="stencil-thickness">
+                    <div class="title-slider">
+                        <span class="title-left">Slash</span>
+                        <span class="title-right"></span>
+                        <span class="title-right value-title">66</span>
+                    </div>
+                    <span class="irs js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none;">0</span></span><span class="irs-grid"></span><span class="irs-bar"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single"></span><span class="irs-slider single"></span></span><input type="text" class="co-slider irs-hidden-input" data-min="10" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="30" tabindex="-1" readonly="">
+                </div>
+                <div class="slider-container" id="stencil-circle-thickness">
+                    <div class="title-slider">
+                        <span class="title-left">Circle</span>
+                        <span class="title-right"></span>
+                        <span class="title-right value-title">66</span>
+                    </div>
+                    <span class="irs js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none;">0</span></span><span class="irs-grid"></span><span class="irs-bar"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single"></span><span class="irs-slider single"></span></span><input type="text" class="co-slider irs-hidden-input" data-min="10" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="30" tabindex="-1" readonly="">
+                </div>
+                <div class="slider-container d-none" id="stencil-opacity">
+                    <div class="title-slider">
+                        <span class="title-left">Opacity</span>
+                        <span class="title-right"></span>
+                        <span class="title-right value-title">1</span>
+                    </div>
+                    <span class="irs js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none;">0</span></span><span class="irs-grid"></span><span class="irs-bar"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single"></span><span class="irs-slider single"></span></span><input type="text" class="co-slider irs-hidden-input" data-min="0" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="100" tabindex="-1" readonly="">
+                </div>
+            </div>
+        </div>
+
+        <div class="bground-holder scrol-change" style="padding-bottom: 200px;">
+            <div class="colorpicker-container mb-2">
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="background_gradient" id="solid-color" class="custom-control-input">
+                    <label class="custom-control-label editor-heading" for="solid-color">Solid Color</label>
+                </div> <!-- solid-color -->
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="background_gradient" id="linear_grad" class="custom-control-input">
+                    <label class="custom-control-label editor-heading" for="linear_grad">Linear Gradient</label>
+                </div> <!-- linear_grad -->
+                <div class="custom-control custom-radio">
+                    <input type="radio" name="background_gradient" id="radial_grad" class="custom-control-input">
+                    <label class="custom-control-label editor-heading" for="radial_grad">Radial Gradient</label>
+                </div> <!--radial_grad -->
+                <span class="title-head">Solid color</span>
+                <div class="input-group custom-color-input" id="canvasBgSingleColor">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bab-color-pick" style="background-color: rgb(255, 255, 255);"></div>
+                    </div>
+                    <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="canvasBgSingleColor" value="#ffffff">
+                </div>
+                <div id="grad-property-container">
+                    <span class="title-head">Gradient color</span>
+                    <div class="input-group custom-color-input" id="canvasBgGradColor1">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bab-color-pick bab-disabled" style="background-color: rgb(199, 50, 90);"></div>
+                        </div>
+                        <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="canvasBgGradColor1">
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-group custom-color-input float-left" id="canvasBgGradColor2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick bab-disabled" style="background-color: rgb(0, 255, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="canvasBgGradColor2">
+                        </div>
+                        <span class="zoom-in-out bab-disabled" id="bg-grad-increase" data-toggle="tooltip" data-placement="top" data-original-title="Increase">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                        <span class="zoom-in-out bab-disabled" id="bg-grad-decrease" data-toggle="tooltip" data-placement="top" data-original-title="Decrease">
+                        <i class="fa fa-minus"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
       </div>
       
-      <div id="Photos" class="tabcontent">
-        <h3>Photos</h3>
-        <p>Photos is the capital of France.</p>
+      <div id="Photos" class="tabcontent photos-content">
+
+									<div class="tabs-wrapper pt-2">
+                                        <span class="tabs-title-head">PHOTOS</span>
+                                        <div class="Photo-upload-btn"  data-toggle="modal" data-target="#exampleModalupload">Upload Your Photo</div>
+                                        <div class="input-group mt-custom">
+                                            <input type="text" class="form-control no-focus" id="pixabay-search-value" placeholder="Search" data-on-enter="searchPixabayImage">
+                                            <div class="input-group-append no-focus" id="pixabay-search-icon">
+                                                <span class="input-group-text">
+                                                    <img src="https://buildabutton.net/version6/assets/images/icons/search.svg">
+                                                </span>
+                                            </div>
+                                        </div>
+									 <div class="tabs-wrapper-inner" id="stock-api-category">
+											<a href="#" class="photo-btn" >SVG</a>
+											<a href="#" class="photo-btn ">SVG Basic</a>
+											<a href="#" class="photo-btn ">Nature</a>
+											<a href="#" class="photo-btn ">Backgrounds</a>
+											<a href="#" class="photo-btn ">Science</a>
+											<a href="#" class="photo-btn ">Education</a>
+											<a href="#" class="photo-btn ">People</a>
+											<a href="#" class="photo-btn ">Feelings</a>
+											<a href="#" class="photo-btn ">Fashion</a>
+											<a href="#" class="photo-btn ">Religion</a>
+											<a href="#" class="photo-btn ">Health</a>
+											<a href="#" class="photo-btn ">Places</a>
+											<a href="#" class="photo-btn ">Animals</a>
+											<a href="#" class="photo-btn ">Industry</a>
+											<a href="#" class="photo-btn ">Food</a>
+											<a href="#" class="photo-btn ">Computer</a>
+											<a href="#" class="photo-btn ">Sports</a>
+											<a href="#" class="photo-btn ">Transportation</a>
+											<a href="#" class="photo-btn ">Travel</a>
+											<a href="#" class="photo-btn ">Buildings</a>
+											<a href="#" class="photo-btn ">Business</a>
+											<a href="#" class="photo-btn ">Music</a>
+										</div> 
+										 <div class="image-loaded-loader d-none" id="photo-loader">
+											<img src="https://buildabutton.net/version6/assets/images/icons/loader-append.gif">
+										</div> 
+										<div class="stock-api scrol-change" id="stock-api" style="display: none;">
+
+										</div>
+									</div>
+							
+						
+                    <!-- =================== -->
+      
       </div>
       
     
   
-      <div id="Shapes" class="tabcontent">
-        <h3>Tddd</h3>
-        <p> is the capital of Japan.</p>
+      <div id="Shapes" class="tabcontent ">
+        <div class="shape-wrapper">
+            <div class="stock-shape-category scrol-change" id="stock-shape-category" style="display: none;"></div>
+            <div class="search-shapes scrol-change " id="regular-shapes"><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0003.svg" src="https://buildabutton.net/version6/uploads/shapes/0003.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/007.svg" src="https://buildabutton.net/version6/uploads/shapes/007.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-3Triangle.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-3Triangle.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-4Diamond.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-4Diamond.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/signs.svg" src="https://buildabutton.net/version6/uploads/shapes/signs.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0012.svg" src="https://buildabutton.net/version6/uploads/shapes/0012.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/027.svg" src="https://buildabutton.net/version6/uploads/shapes/027.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0028.svg" src="https://buildabutton.net/version6/uploads/shapes/0028.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0018.svg" src="https://buildabutton.net/version6/uploads/shapes/0018.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-5Pentagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-5Pentagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-6Hexagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-6Hexagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-7Heptagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-7Heptagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-8Octagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-8Octagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span></div>
+            <div class="col-md-12 p-0" style="text-align: right;">
+                <input class="reset-button go-back" id="go-back-shape" type="button" value="Go Back" style="display: none;">
+            </div>
+            <div class="image-loaded-loader d-none" id="shape-loader">
+                <img src="https://buildabutton.net/version6/assets/images/icons/loader-append.gif">
+            </div>
+            <div class="search-shapes scrol-change" id="search-shapes" style="display: none;"></div>
+        </div>
+
       </div>
       <div id="Text" class="tabcontent">
         <h3>foseeeeeo</h3>
-        <p> is the capital of Japan.</p>
+    
       </div>
       <div id="Lines" class="tabcontent">
         <h3>gggg</h3>
-        <p>Td is the capital of Japan.</p>
+
       </div>
       <div id="Borders" class="tabcontent">
         <h3>sss</h3>
-        <p>d is the capital of Japan.</p>
+    
       </div>
      <div class="main-content">
+         
+   
          <div class="edit-bar">
-            <div class="right-top">
+            <div class="edit-bar">
                 <div class="option-icons-wrapper">
                     <div class="option-icons-left">
                         <span id="clear-canvas-cont" data-toggle="tooltip" data-placement="top" title="" data-original-title="Clear Canvas">
@@ -193,34 +395,157 @@
                     </div>
                 </div>
             </div>
+            <div class="right-bar">
+                <div id="upper-tools">
+                    <button class="setting-btns right-btns" id="btn-show-grids" data-toggle="tooltip" data-placement="top" title="" data-original-title="Grid">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/grid-min.svg">
+                    </button>
+                    <span class="right-btns text-center" id="toggle-centering-guide" data-is-show="true" data-toggle="tooltip" data-placement="top" title="" data-original-title="Centering Guide On/Off">
+                        <button class="setting-btns" id="auto-centering-guide" data-toggle="" data-backdrop="">
+                                       <!-- <i class="fa fa-border-none"></i> -->
+                            <i class="fa fa-crosshairs"></i>
+                        </button>
+                    </span>
+                </div>
+                <div id="lower-tools">
+                    <button class="setting-btns right-btns" id="btn-zoom-in" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom In">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/zoom+min.svg">
+                    </button>
+                    <span id="zoom_percentage">130%</span>
+                    <button class="setting-btns right-btns" id="btn-zoom-out" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom Out">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/zoom-min.svg">
+                    </button>
+                </div>
+                
+            </div>
          </div>
 
      </div>
 
-     <div class="right-most">
-        <div id="upper-tools">
-            <button class="setting-btns right-btns" id="btn-show-grids" data-toggle="tooltip" data-placement="top" title="" data-original-title="Grid">
-                <img src="https://buildabutton.net/version6/assets/images/icons/grid-min.svg">
-            </button>
-            <span class="right-btns text-center" id="toggle-centering-guide" data-is-show="true" data-toggle="tooltip" data-placement="top" title="" data-original-title="Centering Guide On/Off">
-                <button class="setting-btns" id="auto-centering-guide" data-toggle="" data-backdrop="">
-                               <!-- <i class="fa fa-border-none"></i> -->
-                    <i class="fa fa-crosshairs"></i>
-                </button>
-            </span>
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalprint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-custom modal-dialog-centered">
+      <div class="modal-content modal-content-custom ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Save Options
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div id="lower-tools">
-            <button class="setting-btns right-btns" id="btn-zoom-in" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom In">
-                <img src="https://buildabutton.net/version6/assets/images/icons/zoom+min.svg">
-            </button>
-            <span id="zoom_percentage">130%</span>
-            <button class="setting-btns right-btns" id="btn-zoom-out" data-toggle="tooltip" data-placement="top" title="" data-original-title="Zoom Out">
-                <img src="https://buildabutton.net/version6/assets/images/icons/zoom-min.svg">
-            </button>
+        <div class="modal-body">
+          
+
+            <div class="d-flex justify-content-around mt-2">
+                <div class="btn save-btn">Save to Print</div>
+                <div class="btn save-btn">Save to Edit</div>
+            </div>
+
+            <div class="d-flex justify-content-around mt-2 mb-1">
+                <div class="btn save-btn">Save to Print</div>
+                <div class="btn save-btn">Save to Edit</div>
+            </div>
         </div>
         
+      </div>
     </div>
-    </section>
+  </div>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalupload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-custom modal-dialog-centered">
+      <div class="modal-content modal-content-custom ">
+        <div class="modal-header">
+          <h5 class="modal-title modal-title-custom" id="exampleModalLabel">Choose Files to browse your computer
+
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           
+<h5 class="modal-title-custom">Supported File Formats</h5>
+<ul class="modal-title-custom">
+    <li>JPG, TIFF, PNG, GIF, BMP, SVG, PSD</li>
+</ul>
+            <div class="d-flex">
+                <div id="temp-input-design-upload">
+                    <input type="text" readonly="">
+                </div>
+                <div id="temp-div-design-dynamic"></div>
+                <input id="fileupload_design" type="file" name="files[]"  multiple="" size="1">
+            </div>
+        </div>
+        <div class="modal-footer mr-3">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-custom modal-dialog-centered">
+      <div class="modal-content modal-content-custom ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Button Preview
+        </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+           
+
+            <div class="d-flex">
+                <div id="temp-input-design-upload">
+                    <input type="text" readonly="">
+                </div>
+                <div id="temp-div-design-dynamic"></div>
+                <input id="fileupload_design" type="file" name="files[]"  multiple="" size="1">
+            </div>
+        </div>
+        <div class="modal-footer mr-3">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalpreview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Button Preview
+            </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="share-row-preiew text-center">
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+                <div class="btn-dart">Pinback</div>
+        </div>
+
+            <div class="d-flex">
+                <img src="images/download.png" class="img-fluid modal-img" alt="">
+            </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
