@@ -20,7 +20,7 @@
     font-weight: bold !important;
     font-size: 14px !important;
     float: left !important;
-    padding-bottom: 1.3125rem !important;
+    /* padding-bottom: 1.3125rem !important; */
 }
 #topbar-right .option-button {
     
@@ -526,7 +526,7 @@ display: flex;
     border: 1px solid #B1B2BC;
     border-left-color: transparent !important;
 }
-input.form-control {
+input.form-control-border {
     background: transparent;
     border: 1px solid #B1B2BC;
     border-right-color: transparent;
@@ -575,3 +575,278 @@ input.form-control {
 	background-color: rgb(255, 255, 255);
 }
 /* ----------------Photo-Tabs------------------- */
+/* ----------------Shapes-Tabs------------------- */
+#Shapes {
+    overflow-y: hidden;
+    padding: 2px 20px;
+    height: 100% !important;
+} 
+.shape-list-item img {
+    width: 100%;
+}
+.shape-list-item {
+    width: 29%;
+    margin: 5px 5px;
+    float: left;
+    cursor: pointer;
+}
+.title-header {
+    font-size: 12px;
+    font-weight: bold;
+    color: #33354A;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+/* ----------------Shapes-Tabs------------------- */
+/* ----------------Borders-Tabs------------------- */
+.border-list-item {
+    width: 29%;
+    margin: 5px 5px;
+    float: left;
+    cursor: pointer;
+}
+.border-list-item img {
+    width: 100%;
+}
+
+/* ----------------Borders-Tabs------------------- */
+/* ----------------Lines-Tabs------------------- */
+.template-row {
+    margin: 15px 0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.active-line {
+    background: #E4E4E4;
+    border-radius: 29px;
+}
+.irs-disable-mask {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -1%;
+    width: 102%;
+    height: 100%;
+    cursor: default;
+    background: rgba(0,0,0,0.0);
+    z-index: 2;
+}
+.template-row img {
+    width: 30px;
+    margin: 0 10px;
+}
+.heading-title-accent {
+    font-size: 13px;
+    color: #4D4F60;
+    opacity: 0.8;
+    text-transform: uppercase;
+   
+    font-weight: bold;
+}
+.heading-title {
+    color: #4D4F60;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 12px;
+}
+.slider-container {
+    margin-bottom: 20px;
+}
+.irs .irs-slider.single {
+    top: 0px;
+    width: 11px;
+    height: 11px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+}
+.irs .irs-bar, .irs .irs-bar-edge {
+    top: 4px;
+    height: 3px;
+}
+
+.slider-container{
+    margin-bottom: 20px;
+  
+  }
+  .slider-container.title-slider {
+    margin-top: 15px;
+    color: #4D4F60;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  
+  }
+  .slider-container .title-left {
+    opacity: 0.8;
+  }
+  .slider-container .title-right {
+    float: right;
+    opacity: 0.8;
+  }
+  .irs{
+    height: 10px;
+    }
+
+  .irs .irs-line {
+    top: 4px;
+    width: 100%;
+    height: 3px;
+    background: #B1B2BC;
+    border: 0;
+}
+  .irs-slider {
+    top: 25px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #AAA;
+    background: #DDD;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 20%,rgba(255,255,255,1) 100%);
+    border-radius: 27px;
+    -moz-border-radius: 27px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+    cursor: pointer;
+}
+  .irs-line-left,
+  .irs-line-mid,
+  .irs-line-right{
+    height: 3px;
+  }
+  .irs-bar-edge{
+    width: 10px;
+  }
+  .irs-bar, .irs-bar-edge{
+    top: 4px;
+    height: 3px;
+  }
+  .irs-slider.single{
+    top: 0px;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+  }
+/* ----------------Lines-Tabs------------------- */
+/* ----------------Text-Tabs------------------- */
+#text-section .heading-title.top {
+    font-size: 28px;
+    font-weight: 800;
+    color: #33354A;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+ #curved_text {
+    width: 100%;
+}
+.text-collective-heading {
+    padding-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.dropdown-custom {
+    width: 170px;
+    height: 32px;
+    background: transparent !important;
+    color: #4D4F60;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #B1B2BC;
+    text-align: left;
+    -webkit-appearance: menulist;
+}
+.zoom-in-out-custom {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    border: 1px solid #b1b2bc;
+    margin: 0px 4px;
+    border-radius: 2.4px;
+    color: #939396;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.flip-btn-container {
+    margin-top: 120px;
+}
+
+.flip-btn-container .flip-button {
+    margin: 0 5px;
+    padding: 2px 9px;
+    border: 1px solid #B1B2BC;
+    background: transparent;
+    
+}
+.chosen-search input {
+    width: 100%;
+    margin-top: 4px;
+}
+#text-controls {
+    display: flex;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.text-control-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    color: #4D4F60;
+    margin: 0px 5px 0 0;
+    border: 1px solid #B1B2BC;
+    border-radius: 2.4px;
+    text-decoration: none;
+}
+#text-transition {
+    display: flex;
+    width: 50%;
+    float: left;
+}
+.text-control-btns i {
+    opacity: 0.4;
+}
+.text-alignment-btns {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px 0 0;
+    text-decoration: none;
+    opacity: 0.2;
+}
+.text-alignment-btns1 {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px 0 0;
+    text-decoration: none;
+   
+}
+.title-slider .title-left {
+    opacity: 0.8;
+}
+.title-slider {
+    margin-top: 15px;
+    color: #4D4F60;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.custom-checkbox .heading-title {
+    color: #161724;
+    font-size: 11px;
+    line-height: 25px;
+}
+.heading-title-custom {
+    color: #4D4F60;
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 3px;
+}
+/* ----------------Text-Tabs------------------- */

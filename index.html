@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ion-rangeSlider.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/custom.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -237,7 +238,7 @@
                                         <span class="tabs-title-head">PHOTOS</span>
                                         <div class="Photo-upload-btn"  data-toggle="modal" data-target="#exampleModalupload">Upload Your Photo</div>
                                         <div class="input-group mt-custom">
-                                            <input type="text" class="form-control no-focus" id="pixabay-search-value" placeholder="Search" data-on-enter="searchPixabayImage">
+                                            <input type="text" class="form-control form-control-border no-focus" id="pixabay-search-value" placeholder="Search" data-on-enter="searchPixabayImage">
                                             <div class="input-group-append no-focus" id="pixabay-search-icon">
                                                 <span class="input-group-text">
                                                     <img src="https://buildabutton.net/version6/assets/images/icons/search.svg">
@@ -283,7 +284,9 @@
       
     
   
-      <div id="Shapes" class="tabcontent ">
+      <div id="Shapes" class="tabcontent pt-3 ">
+        <button class="Photo-upload-btn" id="drawing-tool-shape">Draw Freehand</button>
+        <span class="title-header">Select Shape</span>
         <div class="shape-wrapper">
             <div class="stock-shape-category scrol-change" id="stock-shape-category" style="display: none;"></div>
             <div class="search-shapes scrol-change " id="regular-shapes"><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0003.svg" src="https://buildabutton.net/version6/uploads/shapes/0003.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/007.svg" src="https://buildabutton.net/version6/uploads/shapes/007.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-3Triangle.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-3Triangle.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-4Diamond.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-4Diamond.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/signs.svg" src="https://buildabutton.net/version6/uploads/shapes/signs.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0012.svg" src="https://buildabutton.net/version6/uploads/shapes/0012.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/027.svg" src="https://buildabutton.net/version6/uploads/shapes/027.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0028.svg" src="https://buildabutton.net/version6/uploads/shapes/0028.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/0018.svg" src="https://buildabutton.net/version6/uploads/shapes/0018.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-5Pentagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-5Pentagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-6Hexagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-6Hexagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-7Heptagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-7Heptagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span><span class="shapes_cont shape-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/BAB-8Octagon.svg" src="https://buildabutton.net/version6/uploads/shapes/BAB-8Octagon.svg?v=6" width="100" style="height: 5vw;" data-original-title="click to add"></span></div>
@@ -297,16 +300,373 @@
         </div>
 
       </div>
-      <div id="Text" class="tabcontent">
-        <h3>foseeeeeo</h3>
+      <div id="Text" class="tabcontent ">
+          <div class="text-tab-wrapper pt-3 ml-2 mr-2">
+                      <button class="Photo-upload-btn" id="drawing-tool-shape">ADD TEXT LAYERS</button>
+        <div id="text-propertie-container" class="">
+            <div class="text-popup-on-mobile">
+                <div class="text-popup-mobile-inner">
+                    <span class="heading-title top" id="edit-text-title">EDIT TEXT BELOW</span>
+                    <textarea id="curved_text" rows="3" cols="26" maxlength="1000"></textarea>
+                </div>
+            </div>
+            <div class="text-collective-holder">
+
+                <div id="text-style-container">
+                    <span class="heading-title">Text Style</span>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="normal-text" name="text-style" class="text-style custom-control-input" value="straight">
+                        <label class="custom-control-label text-collective-heading" for="normal-text">NORMAL TEXT</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="curved-text" name="text-style" class="text-style custom-control-input" value="curved">
+                        <label class="custom-control-label text-collective-heading" for="curved-text">CURVED TEXT</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="monogram-text" name="text-style" class="text-style custom-control-input" value="monogram">
+                        <label class="custom-control-label text-collective-heading" for="monogram-text">MONOGRAM TEXT</label>
+                    </div>
+                </div>
+
+                <div class="curved-option-container" id="curved-text-holder" style="display: none;">
+                    <span class="heading-title">Text CURVED OPTION</span>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="curve_up" name="curved-option" class="curved-option custom-control-input" value="up">
+                        <label class="custom-control-label text-collective-heading" for="curve_up">CURVE UP</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="curve_down" name="curved-option" class="curved-option custom-control-input" value="down">
+                        <label class="custom-control-label text-collective-heading" for="curve_down">CURVE DOWN</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <span class="heading-title">Size</span>
+            <div class="row m-0">
+                <div class="dropdown d-textsize">
+                    <select class="dropdown-toggle dropdown-custom" id="dropdown-text-size">
+
+                        <option class="dropdown-item" value="1">.1</option>
+
+                        <option class="dropdown-item" value="2">.3</option>
+
+                        <option class="dropdown-item" value="4">.5</option>
+
+                        <option class="dropdown-item" selected="" value="12">1</option>
+
+                        <option class="dropdown-item" value="18">X1.5</option>
+
+                        <option class="dropdown-item" value="25">X2</option>
+
+                        <option class="dropdown-item" value="35">X3</option>
+                    </select>
+                </div>
+                <div class="d-flex">
+                <span class="zoom-in-out-custom text-size-increase" data-toggle="tooltip" data-placement="top" title="" data-original-title="Increase">
+                    <i class="fa fa-plus"></i>
+                </span>
+                    <span class="zoom-in-out-custom text-size-decrease" data-toggle="tooltip" data-placement="top" title="" data-original-title="Decrease">
+                    <i class="fa fa-minus"></i>
+                </span>
+                </div>
+            </div>
+            <div class="row flip-btn-container mx-auto mt-2">
+                <label class="heading-title">Flip Vertical</label>
+                <button class="reset-button flip-button flipVertical" data-toggle="tooltip" data-placement="top" title="" data-original-title="Flip Vertical">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/flip-right.svg">
+                </button>
+                <label class="heading-title">Flip Horizontal</label>
+                <button class="reset-button flip-button flipHorizontal" data-toggle="tooltip" data-placement="top" title="" data-original-title="Flip Horizontal">
+                    <img src="https://buildabutton.net/version6/assets/images/icons/flip-top.svg">
+                </button>
+            </div>
+            <div class="row justify-content-between m-0">
+                <span class="heading-title mt-2">Font Family</span>
+                <span class="heading-title mt-2" id="manage_fonts"><u>Add fonts</u></span>
+            </div>
+
+            <div class="dropdown" id="btn-font-family">
+                <select class="dropdown-toggle dropdown-custom btn-font-family" aria-placeholder="dddd" id="dropdown-font-family" style="display: none;"><option value="Arial" data-font-title="Arial" style="font-family: Arial">Arial</option><option value="Balogna" style="font-family: Balogna">Balogna</option><option value="Baskerville Old Face" style="font-family: Baskerville Old Face">Baskerville Old Face</option><option value="Bell Gothic Std Black" style="font-family: Bell Gothic Std Black">Bell Gothic Std Black</option><option value="Calibri" style="font-family: Calibri">Calibri</option><option value="CircleCenter" style="font-family: CircleCenter">CircleCenter</option><option value="CircleLeft" style="font-family: CircleLeft">CircleLeft</option><option value="CircleRight" style="font-family: CircleRight">CircleRight</option><option value="CollegiateHeavyOutline" style="font-family: CollegiateHeavyOutline">CollegiateHeavyOutline</option><option value="Comic Sans MS" style="font-family: Comic Sans MS">Comic Sans MS</option><option value="Courier Std" style="font-family: Courier Std">Courier Std</option><option value="Expressway Free" style="font-family: Expressway Free">Expressway Free</option><option value="HeartCenter" style="font-family: HeartCenter">HeartCenter</option><option value="HeartLeft" style="font-family: HeartLeft">HeartLeft</option><option value="HeartRight" style="font-family: HeartRight">HeartRight</option><option value="Helvetica" style="font-family: Helvetica">Helvetica</option><option value="Hero" style="font-family: Hero">Hero</option><option value="Impact" style="font-family: Impact">Impact</option><option value="ITC Zapf Chancery" style="font-family: ITC Zapf Chancery">ITC Zapf Chancery</option><option value="Magnificent" style="font-family: Magnificent">Magnificent</option><option value="Outlaw" style="font-family: Outlaw">Outlaw</option><option value="ScallopCenter" style="font-family: ScallopCenter">ScallopCenter</option><option value="ScallopLeft" style="font-family: ScallopLeft">ScallopLeft</option><option value="ScallopRight" style="font-family: ScallopRight">ScallopRight</option><option value="Script MT Bold" style="font-family: Script MT Bold">Script MT Bold</option><option value="Snake" style="font-family: Snake">Snake</option><option value="Team Spirit" style="font-family: Team Spirit">Team Spirit</option><option value="Times New Roman" style="font-family: Times New Roman">Times New Roman</option><option value="Verdana" style="font-family: Verdana">Verdana</option><option value="Western" style="font-family: Western">Western</option><option value="Wingdings" style="font-family: Wingdings">Wingdings</option></select>
+                <div class="chosen-container chosen-container-single" style="width: 95%;" title="" id="dropdown_font_family_chosen"><a class="chosen-single" tabindex="-1">
+                  <div><b></b></div></a><div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" placeholder="Arial" autocomplete="off"></div>
+                        <ul class="chosen-results"></ul></div></div>
+            </div>
+
+            <div class="dropdown d-none" id="monogram-text-holder">
+                <select class="dropdown-toggle dropdown-custom" id="monogram_font" style="display: none;">
+                    <option data-toggle="tooltip" title="" value="Heart" data-class="dropdown-item" ;="" data-original-title="heart font Shape">Heart</option>
+                    <option data-toggle="tooltip" title="" value="Circle" data-class="dropdown-item" ;="" data-original-title="Circle font">Circle</option>
+                    <option data-toggle="tooltip" title="" value="Scallop" data-class="dropdown-item" ;="" data-original-title="Scallop font">Scallop</option>
+                </select><div class="chosen-container chosen-container-single" style="width: 95%;" title="" id="monogram_font_chosen"><a class="chosen-single chosen-default" tabindex="-1">
+                    <span>Select an Option</span><div><b></b></div></a>
+                    <div class="chosen-drop"><div class="chosen-search">
+                        <input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+            </div>
+
+            <div class="hihe-for-tag-line" id="text-controls">
+                <div id="text-transition">
+                <span class="text-control-btns boldBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bold">
+                    <i class="fa fa-bold"></i>
+                </span>
+                    <span class="text-control-btns italicBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Italic">
+                    <i class="fa fa-italic"></i>
+                </span>
+                    <span class="text-control-btns underlineBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Underline">
+                    <i class="fa fa-underline"></i>
+                </span>
+                </div>
+                <div id="text-alignment">
+                    <a class="text-alignment-btns leftAlignBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Align Left">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/align-left.svg">
+                    </a>
+                    <a class="text-alignment-btns1 centerAlignBtn full-opacity">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/align-center.svg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Align Center">
+                    </a>
+                    <a class="text-alignment-btns rightAlignBtn">
+                        <img src="https://buildabutton.net/version6/assets/images/icons/align-right.svg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Align Right">
+                    </a>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="title-slider">
+                    <span class="title-left">Font size</span>
+                    <span id="fontsizeSpan" class="title-right">40</span>
+                </div>
+                <span class="irs js-irs-8"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 47.7642%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 47.7642%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="fontsizeBtn" data-min="0" data-max="80" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="40" tabindex="-1" readonly="">
+
+                <div class="title-slider hihe-for-tag-line">
+                    <span class="title-left">Line Spacing</span>
+                    <span id="btn-text-lineheight-span" class="title-right">1.16</span>
+                </div>
+                <span class="irs js-irs-9"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 20.7671%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 20.7671%;"></span></span><input type="text" class="co-slider hihe-for-tag-line irs-hidden-input" id="btn-text-lineheight" data-min=".7" data-max="3" data-step="0.1" data-hide-from-to="true" data-hide-min-max="true" value="1.16" tabindex="-1" readonly="">
+
+                <div class="title-slider">
+                    <span class="title-left">Letter spacing</span>
+                    <span id="charSpacingSpan" class="title-right">0</span>
+                </div>
+                <span class="irs js-irs-10"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 0%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 0%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="charSpacingBtn" data-min="0" data-max="50" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="">
+
+                <div class="title-slider">
+                    <span class="title-left">Radius</span>
+                    <span class="title-right">º</span>
+                    <span id="curved-text-radius-Span" class="title-right">161</span>
+                </div>
+                <span class="irs js-irs-11 irs-disabled"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 42.7224%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 42.7224%;"></span><span class="irs-disable-mask"></span></span><input type="text" class="co-slider irs-hidden-input" id="curved-text-radius-btn" data-min="0" data-max="360" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="" disabled="">
+                <div class="title-slider">
+                    <span class="title-left">Rotation</span>
+                    <span class="title-right">º</span>
+                    <span id="textRotationSpan" class="title-right">0</span>
+                </div>
+                <span class="irs js-irs-12"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 0%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 0%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="textRotationBtn" data-min="0" data-max="360" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="">
+                <div class="title-slider">
+                    <span class="title-left">Opacity</span>
+                    <span id="textOpacitySpan" class="title-right">100</span>
+                </div>
+                <span class="irs js-irs-13"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 95.5285%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 95.5285%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="textOpacityBtn" data-min="0" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="100" tabindex="-1" readonly="">
+            </div>
+            <div class="colorpicker-container mb-2">
+                <span class="heading-title">Text color</span>
+                <div class="input-group custom-color-input" id="text-color-btn">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                    </div>
+                    <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" id="" aria-describedby="">
+                </div>
+            </div>
+            <span class="heading-title">Text outline</span>
+            <div class="input-color-right-templates d-flex">
+                <div class="input-group custom-color-input float-left" id="text-outline-color">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text bab-color-pick" style="background-color: rgb(0, 0, 0);"></div>
+                    </div>
+                    <input type="text" class="form-control bab-color-pick-input" disabled="" aria-label="Input group example" aria-describedby="textOutlineColor">
+                </div>
+                <span class="zoom-in-out" id="textOutlineIncreaseBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Increase">
+               <i class="fa fa-plus"></i>
+           </span>
+                <span class="zoom-in-out" id="textOutlineDecreaseBtn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Decrease">
+               <i class="fa fa-minus"></i>
+           </span>
+            </div>
+            <div class="custom-control custom-checkbox d-flex justify-content-around">
+                <div class="check-row">
+                    <input type="checkbox" class="custom-control-input" id="textReverseBtn">
+                    <label class="custom-control-label heading-title-custom" for="textReverseBtn">Text Reverse</label>
+                </div>
+                <div class="check-row">
+                    <input type="checkbox" class="custom-control-input" id="textShadowBtn">
+                    <label class="custom-control-label heading-title-custom" for="textShadowBtn">SHADOWS</label>
+                </div>
+            </div>
+            <div class="" id="shadow-properties-container">
+                <span class="heading-title">Shadow Color</span>
+                <div class="input-color-right-templates d-flex">
+                    <div class="input-group custom-color-input float-left" id="text-shadow-color">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bab-color-pick colorpickerShadowBtn bab-disabled" id="textShadowColor" style="background-color: rgb(0, 0, 0);"></div>
+                        </div>
+                        <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" id="textShadowColorValue" aria-describedby="textShadowColor">
+                    </div>
+                </div> <!-- Shadow Color -->
+                <div class="slider-container">
+
+                    <div class="title-slider">
+                        <span class="title-left">blur</span>
+                        <span id="shadow-blur-span" class="title-right">4</span>
+                    </div> <!-- Shadow opacity -->
+                    <span class="irs js-irs-14 irs-disabled"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 15.2846%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 15.2846%;"></span><span class="irs-disable-mask"></span></span><input type="text" class="co-slider irs-hidden-input" id="shadow-blur" data-min="0" data-max="25" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="" disabled="">
+
+                    <div class="title-slider">
+                        <span class="title-left">Angle Distance</span>
+
+                        <span class="title-right" id="angleDistanceSpan">10</span>
+                    </div> <!-- Angle Distance -->
+                    <span class="irs js-irs-15 irs-disabled"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 31.8428%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 31.8428%;"></span><span class="irs-disable-mask"></span></span><input type="text" class="co-slider irs-hidden-input" id="shadow-angle" data-min="0" data-max="30" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="" disabled="">
+                    <div class="title-slider">
+                        <span class="title-left">Distance</span>
+                        <span class="title-right" id="distanceSpan">10</span>
+                    </div><!-- Distance -->
+                    <span class="irs js-irs-16 irs-disabled"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 31.8428%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 31.8428%;"></span><span class="irs-disable-mask"></span></span><input type="text" class="co-slider irs-hidden-input" id="shadow-distance" data-min="0" data-max="30" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="" disabled="">
+                </div>
+            </div>
+            <div class="text-path-btn-holder hide-on-mobile hide-on-tab">
+                <button class="reset-button sp-text-btn d-none" id="text_to_path">Text to Path</button>
+            </div>
+            <div class="left-editor" id="curved-text-holder-2" style="display: none;">
+                <span class="heading-title">Curve text option</span>
+                <div class="row m-0">
+                    <button class="reset-button sp-text-btn" id="curve_up-2">Up</button>
+                    <!--                            <button class="reset-button sp-text-btn" id="straight">Straight</button>-->
+                    <button class="reset-button sp-text-btn" id="curve_down-2">Down</button>
+                </div>
+                <span class="heading-title d-none">Text shapes</span>
+                <div class="dropdown d-none">
+                    <select class="dropdown-toggle dropdown-custom" id="dropdown-text-shape" style="display: none;">
+                        <!--								<option data-toggle="tooltip" title="Straight Text shape" value="https://buildabutton.net/version6/assets/images/leftbar-icons/STRAIGHT.png" data-val="STRAIGHT" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/STRAIGHT.png');">&nbsp;</option>-->
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/curved.png" data-val="curved" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/curved.png');" data-original-title="Curved Text Shape">&nbsp;
+                        </option>
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/arc.png" data-val="arc" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/arc.png');" data-original-title="Arc Text Shape">&nbsp;
+                        </option>
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/smallToLarge.png" data-val="smallToLarge" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/smallToLarge.png');" data-original-title="SmallToLarge Text Shape"></option>
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/largeToSmallTop.png" data-val="largeToSmallTop" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/largeToSmallTop.png');" data-original-title="LargeToSmallTop Text Shape"></option>
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/largeToSmallBottom.png" data-val="largeToSmallBottom" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/largeToSmallBottom.png');" data-original-title="LargeToSmallBottom Text Shape"></option>
+
+                        <option data-toggle="tooltip" title="" value="https://buildabutton.net/version6/assets/images/leftbar-icons/bulge.png" data-val="bulge" data-class="avatar" data-style="background-image: url('../assets/images/leftbar-icons/bulge.png');" data-original-title="Bulge Text Shape"></option>
+                    </select><span tabindex="0" id="dropdown-text-shape-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="dropdown-text-shape-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget" data-val="STRAIGHT" style="width: 200px;"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text TFOOptlstFiltreImg" style="background-image: url('../assets/images/leftbar-icons/curved.png');">&nbsp;
+                        </span></span>
+                </div>
+            </div>
+
+            <div class="slider-container text_shapes_filters" style="display: none;">
+                <div class="title-slider">
+                    <span class="title-left">Start Font </span>
+                    <span class="title-right" id="start-font-span">25</span>
+                </div>
+                <span class="irs js-irs-17"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 5.97053%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 5.97053%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="start_font" data-min="20" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="25" tabindex="-1" readonly="">
+                <div class="title-slider">
+                    <span class="title-left">End Font</span>
+                    <span class="title-right" id="end-font-span">50</span>
+                </div>
+                <span class="irs js-irs-18"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 42.4571%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 42.4571%;"></span></span><input type="text" class="co-slider irs-hidden-input" id="end_font" data-min="" data-max="100" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="50" tabindex="-1" readonly="">
+            </div>
+        </div>
     
       </div>
+      </div>
       <div id="Lines" class="tabcontent">
-        <h3>gggg</h3>
+        <div class="line-holder scrol-change p-1" style="padding-bottom: 200px;">
+            <div class="template-row line-active active-line ml-2 mr-2 mt-3" id="btn-image-area-line">
+                <img src="https://buildabutton.net/version6/assets/images/icons/image_area.gif">
+                <span class="temp-inner-desc">Image Area</span>
+            </div>
+            <div class="template-row active-line ml-2 mr-2" id="btn-tag-b-lines">
+                <img src="https://buildabutton.net/version6/assets/images/icons/tag_lines.png">
+                <span class="temp-inner-desc">Tag Lines</span>
+            </div>
+            <div class="template-row ml-2 mr-2" id="btn-accent-ring">
+                <img src="https://buildabutton.net/version6/assets/images/icons/accent_ring.png">
+                <span class="temp-inner-desc">Accent Ring</span>
+            </div>
+            <div id="accent-ring-props">
+                <span class="heading-title-accent">Accent Ring properties</span>
+                <div class="row size-btn-container m-0">
+                    <label class="heading-title m-0">Increase Size</label>
+                    <span class="zoom-in-out accent_ring_increase bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Increase">
+                        <i class="fa fa-plus"></i>
+                    </span>
+                    <label class="heading-title m-0">Decrease Size</label>
+                    <span class="zoom-in-out accent_ring_decrease bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Decrease">
+                        <i class="fa fa-minus"></i>
+                    </span>
+                </div>
+
+                <div class="slider-container">
+                    <div id="accent-ring-size-container">
+                        <div class="title-slider">
+                            <span class="title-left">Size</span>
+                            <span class="title-right" id="accent-ring-size-span">0</span>
+                        </div>
+                        <span class="irs js-irs-3 irs-disabled"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="visibility: hidden; display: none;">0</span><span class="irs-to" style="visibility: hidden; display: none;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.23577%; width: 0%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 0%;"></span><span class="irs-disable-mask"></span></span><input type="text" class="co-slider irs-hidden-input" id="accent-ring-size-btn" data-min="0" data-max="500" data-step="1" data-hide-from-to="true" data-hide-min-max="true" value="0" tabindex="-1" readonly="" disabled="">
+                    </div>
+                </div>
+
+                <div class="colorpicker-container mb-2">
+                    <span class="title-head">Single color</span>
+                    <div class="input-group custom-color-input" id="accent-ring-color-picker">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bab-color-pick bab-disabled" style="background-color: rgb(25, 119, 10);"></div>
+                        </div>
+                        <input type="text" class="form-control  bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="">
+                    </div>
+                    <span class="title-head">Gradient color</span>
+                    <div class="input-group custom-color-input" id="btn-color-picker-accent-g1">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bab-color-pick bab-disabled" style="background-color: rgb(199, 50, 90);"></div>
+                        </div>
+                        <input type="text" class="form-control bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="">
+                    </div>
+                    <div class="d-flex">
+                        <div class="input-group custom-color-input float-left" id="btn-color-picker-accent-g2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text bab-color-pick bab-disabled" style="background-color: rgb(0, 255, 0);"></div>
+                            </div>
+                            <input type="text" class="form-control  bab-color-pick-input bab-disabled" disabled="" aria-label="Input group example" aria-describedby="">
+                        </div>
+                        <div class="d-flex float-left" id="size-container-lines-outer">
+                        <span class="zoom-in-out accent_ring_c_increase plus_signs bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Increase">
+                            <i class="fa fa-plus"></i>
+                        </span>
+                            <span class="zoom-in-out accent_ring_c_decrease minus_signs bab-disabled" data-toggle="tooltip" data-placement="top" title="" data-original-title="Decrease">
+                            <i class="fa fa-minus"></i>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
 
       </div>
       <div id="Borders" class="tabcontent">
-        <h3>sss</h3>
+        <div class="border-holder pt-3">
+            <button class="Photo-upload-btn" id="drawing-tool-shape">Draw Freehand</button>
+            <span class="title-header">Select a Border</span>
+            <div class="border-wrapper scrol-change">
+                <div id="stock-border"><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/output-onlinepngtools.png" src="https://buildabutton.net/version6/uploads/shapes/output-onlinepngtools.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Abstract Rainbow.png" src="https://buildabutton.net/version6/uploads/shapes/Abstract Rainbow.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Blue Acrylic.png" src="https://buildabutton.net/version6/uploads/shapes/Blue Acrylic.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Blue Enamel.png" src="https://buildabutton.net/version6/uploads/shapes/Blue Enamel.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Blue Mint Polka Dots.png" src="https://buildabutton.net/version6/uploads/shapes/Blue Mint Polka Dots.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Colorful Abstract.png" src="https://buildabutton.net/version6/uploads/shapes/Colorful Abstract.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Colorful Diamonds.png" src="https://buildabutton.net/version6/uploads/shapes/Colorful Diamonds.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Colorful Paws.png" src="https://buildabutton.net/version6/uploads/shapes/Colorful Paws.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Daisies in Spring.png" src="https://buildabutton.net/version6/uploads/shapes/Daisies in Spring.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Earthtone Marble.png" src="https://buildabutton.net/version6/uploads/shapes/Earthtone Marble.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Floral Paisley.png" src="https://buildabutton.net/version6/uploads/shapes/Floral Paisley.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Funky Border.png" src="https://buildabutton.net/version6/uploads/shapes/Funky Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Geo Shapes.png" src="https://buildabutton.net/version6/uploads/shapes/Geo Shapes.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Gifts Galore.png" src="https://buildabutton.net/version6/uploads/shapes/Gifts Galore.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Green Emerald.png" src="https://buildabutton.net/version6/uploads/shapes/Green Emerald.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Hearts in Blush.png" src="https://buildabutton.net/version6/uploads/shapes/Hearts in Blush.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Iris Border.png" src="https://buildabutton.net/version6/uploads/shapes/Iris Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Ladybug Picnic.png" src="https://buildabutton.net/version6/uploads/shapes/Ladybug Picnic.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Mellow Border.png" src="https://buildabutton.net/version6/uploads/shapes/Mellow Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Modern Border.png" src="https://buildabutton.net/version6/uploads/shapes/Modern Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Party Dots.png" src="https://buildabutton.net/version6/uploads/shapes/Party Dots.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Peaceful Neutral.png" src="https://buildabutton.net/version6/uploads/shapes/Peaceful Neutral.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Pink Black Polka Dots.png" src="https://buildabutton.net/version6/uploads/shapes/Pink Black Polka Dots.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Polka Dots.png" src="https://buildabutton.net/version6/uploads/shapes/Polka Dots.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Prismatic Border.png" src="https://buildabutton.net/version6/uploads/shapes/Prismatic Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Rainbow Border.png" src="https://buildabutton.net/version6/uploads/shapes/Rainbow Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Retro Border.png" src="https://buildabutton.net/version6/uploads/shapes/Retro Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Rose Garden.png" src="https://buildabutton.net/version6/uploads/shapes/Rose Garden.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Sparkle Hearts.png" src="https://buildabutton.net/version6/uploads/shapes/Sparkle Hearts.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Stained Glass.png" src="https://buildabutton.net/version6/uploads/shapes/Stained Glass.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Watercolor Border.png" src="https://buildabutton.net/version6/uploads/shapes/Watercolor Border.png" width="100" style="height: 5vw;"></span><span class="shapes_cont border-list-item ui-draggable ui-draggable-handle">   <img class="drag-img" data-toggle="tooltip" title="click to add" data-placement="top" data-resource-id="https://buildabutton.net/version6/uploads/shapes/Winter White.png" src="https://buildabutton.net/version6/uploads/shapes/Winter White.png" width="100" style="height: 5vw;"></span></div>
+            </div>
+        </div>
     
       </div>
      <div class="main-content">
